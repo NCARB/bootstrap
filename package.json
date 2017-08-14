@@ -1,6 +1,6 @@
 {
-  "name": "bootstrap",
-  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "name": "ncarb-bootstrap",
+  "description": "NCARB-styled bootstrap",
   "version": "4.0.0-beta",
   "keywords": [
     "css",
@@ -11,10 +11,11 @@
     "framework",
     "web"
   ],
-  "homepage": "https://getbootstrap.com",
-  "author": "The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)",
+  "homepage": "https://ncarb.github.io/bootstrap",
+  "author": "The Bootstrap Authors (https://github.com/ncarb/bootstrap/graphs/contributors)",
   "contributors": [
-    "Twitter, Inc."
+    "Twitter, Inc.",
+    "NCARB"
   ],
   "scripts": {
     "bash": "bash",
@@ -55,15 +56,15 @@
     "watch-js": "nodemon --ignore scss/ --ignore js/dist/ --ignore dist/ -e js -x \"npm run js-compile-plugins\"",
     "watch": "npm-run-all --parallel watch-css watch-js"
   },
-  "style": "dist/css/bootstrap.css",
-  "sass": "scss/bootstrap.scss",
-  "main": "dist/js/bootstrap",
+  "style": "dist/css/ncarb-bootstrap.css",
+  "sass": "scss/ncarb-bootstrap.scss",
+  "main": "dist/js/ncarb-bootstrap",
   "repository": {
     "type": "git",
-    "url": "https://github.com/twbs/bootstrap.git"
+    "url": "https://github.com/ncarb/bootstrap.git"
   },
   "bugs": {
-    "url": "https://github.com/twbs/bootstrap/issues"
+    "url": "https://github.com/ncarb/bootstrap/issues"
   },
   "license": "MIT",
   "dependencies": {},
