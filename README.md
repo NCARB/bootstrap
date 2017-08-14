@@ -46,10 +46,6 @@ Read the [Getting started page](https://ncarb.github.io/bootstrap/getting-starte
 
 ## NCARB notes
 
-Focus is on an `ncarb-bootstrap` stylesheet that cascades over `bootstrap`.
-
-While we compile `bootstrap`, it&#8217;s for convenience; we depend on the seperate bootstrap package.
-
 ### Scripts
 
 Use `npm run` to execute npm scripts found in `package.json`
@@ -81,15 +77,13 @@ bootstrap/
 │   ├── bootstrap.css
 │   ├── bootstrap.css.map
 │   ├── bootstrap.min.css
-│   ├── bootstrap.min.css.map
-│   ├── ncarb-bootstrap.min.css
-│   └── ncarb-bootstrap.min.css.map
+│   └── bootstrap.min.css.map
 └── js/
     ├── bootstrap.js
     └── bootstrap.min.js
 ```
 
-We provide compiled CSS and JS (`bootstrap.*`, `ncarb-bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`, `ncarb-bootstrap.*`). CSS [source maps](https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps) (`bootstrap.*.map`, `ncarb-bootstrap.*.map`) are available for use with certain browsers' developer tools.
+We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). CSS [source maps](https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps) (`bootstrap.*.map`) are available for use with certain browsers' developer tools.
 
 
 ## Bugs and feature requests
