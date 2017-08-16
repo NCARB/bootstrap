@@ -5,7 +5,13 @@
 $nuget = $env:NuGet
 
 # parse the version number out of package.json
-$bsversionParts = ((Get-Content $env:SourcesPath\package.json) -join "`n" | ConvertFrom-Json).version.split('-', 2) # split the version on the '-'
+$bsversionRaw = ((Get-Content $env:SourcesPath\package.json) -join "`n" | ConvertFrom-Json).version
+$bsversionPartsWithMeta = $bsversionRaw.split('+', 2) # split the version on the meta '+'
+if ($bsversionPartsWithMeta.Length -gt 1)
+{
+    $bsversionRaw = $bsversionPartsWithMeta[0];
+}
+$bsversionParts = $bsversionRaw.split('-', 2) # split the version on the '-'
 $bsversion = $bsversionParts[0]
 
 if ($bsversionParts.Length -gt 1)
